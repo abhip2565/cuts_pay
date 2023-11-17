@@ -11,6 +11,13 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+    .top-right-image {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+
 :root {
   scroll-behavior: smooth;
 }
@@ -590,7 +597,8 @@ section {
 --------------------------------------------------------------*/
 .hero {
   width: 100%;
-  min-height: 60vh;
+  min-height:50vh;
+  max-height: 100px;
   padding: 0;
   background: var(--color-black);
   background: url("../img/hero-bg.png") center center;
@@ -630,6 +638,7 @@ section {
 }
 .hero .img {
   margin-bottom: 40px;
+  height: 100px;
   -webkit-animation: fadeInDownLite 1s both;
   animation: fadeInDownLite 1s both;
 }
@@ -654,6 +663,7 @@ section {
 .hero .carousel-control-prev {
   justify-content: start;
 }
+
 @media (min-width: 640px) {
   .hero .carousel-control-prev {
     padding-left: 15px;
@@ -810,6 +820,7 @@ section {
     background-attachment: fixed;
   }
 }
+
 .hero-fullscreen h2 {
   margin: 0 0 10px 0;
   font-size: 48px;
